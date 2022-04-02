@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
             //Fetching the download id received with the broadcast
             val id = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)
             //Checking if the received broadcast is for our enqueued download by matching download id
-            if (this@MainActivity::adapter.isLateinit) {
+            if (this@MainActivity::adapter.isInitialized) {
                 getfiles()
                 adapter.setData(lstData, lstDownloadedFileDAta)
             }
