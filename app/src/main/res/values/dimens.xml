@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- padding /margins-->
+    <dimen name="microPadding">2dp</dimen>
+    <dimen name="miniPadding">4dp</dimen>
+    <dimen name="tinyPadding">5dp</dimen>
+    <dimen name="smallestPadding">7dp</dimen>
+    <dimen name="smallPadding">8dp</dimen>
+    <dimen name="mediumPadding">10dp</dimen>
+    <dimen name="extraMediumPadding">12dp</dimen>
+    <dimen name="normalPadding">15dp</dimen>
+    <dimen name="extraNormalPadding">18dp</dimen>
+    <dimen name="largePadding">20dp</dimen>
+    <dimen name="xlargePadding">23dp</dimen>
+    <dimen name="xxlargePadding">25dp</dimen>
+    <dimen name="xxxlargePadding">30dp</dimen>
+    <dimen name="largerPadding">34dp</dimen>
+    <dimen name="xlargerPadding">37dp</dimen>
+    <dimen name="xxlargerPadding">40dp</dimen>
+    <dimen name="largestPadding">43dp</dimen>
+    <dimen name="round_width_height">93dp</dimen>
+    <dimen name="extraLargestPadding">60dp</dimen>
+
+    <dimen name="card_corner_radius">30dp</dimen>
+    <dimen name="small_card_height_width">58dp</dimen>
+    <dimen name="image_size">88dp</dimen>
+
+    <dimen name="tab_height">36dp</dimen>
+
+    <dimen name="hashtag_padding">2dp</dimen>
+    <dimen name="hashtag_side_padding">2dp</dimen>
+    <dimen name="hashtag_spacing">2dp</dimen>
+    <dimen name="hashtag_line_spacing">1dp</dimen>
+    <dimen name="hashtag_corner_radius">1dp</dimen>
+
+    <!--Text Sizes-->
+    <dimen name="tinnySize">7sp</dimen>
+    <dimen name="smallerSize">9sp</dimen>
+    <dimen name="smallSize">11sp</dimen>
+    <dimen name="mediumSize">13sp</dimen>
+    <dimen name="medium1Size">15sp</dimen>
+    <dimen name="extraMediumSize">16sp</dimen>
+    <dimen name="normalSize">18sp</dimen>
+    <dimen name="largeSize">21sp</dimen>
+    <dimen name="xLargeSize">23sp</dimen>
+    <dimen name="xxLargeSize">26sp</dimen>
+    <dimen name="xxxLargeSize">33sp</dimen>
+    <dimen name="largestSize">56sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="map_size">330dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="design_navigation_icon_padding" tools:override="true">5dp</dimen>
+    <dimen name="dialog_btn_width">120dp</dimen>
+</resources>

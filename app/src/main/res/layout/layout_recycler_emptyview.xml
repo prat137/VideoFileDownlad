@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/llEmptyViewMain"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:paddingStart="@dimen/extraNormalPadding"
+              android:paddingEnd="@dimen/extraNormalPadding"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEmptyImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/normalPadding"
+            android:layout_marginEnd="@dimen/normalPadding"/>
+
+    <ProgressBar
+            android:id="@+id/pbLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmptyTitle"
+            style="@style/recycler_view_empty_text"
+            android:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmptyDescription"
+            style="@style/recycler_view_empty_text"
+            android:textSize="@dimen/mediumSize"
+            android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEmpty"
+            style="@style/recycler_view_empty_button"
+            android:layout_margin="@dimen/miniPadding"
+            android:textSize="@dimen/mediumSize"
+            android:visibility="visible"/>
+
+
+</LinearLayout>

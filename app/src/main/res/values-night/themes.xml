@@ -1,0 +1,322 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DemoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="tvStyle">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+    </style>
+
+    <style name="tvStyleSmall">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/smallSize</item>
+    </style>
+
+    <style name="tvRegularSmall" parent="tvStyleSmall">
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="tvSemiBoldSmall" parent="tvStyleSmall">
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="tvRegular" parent="tvStyle">
+        <item name="fontFamily">@font/regular</item>
+    </style>
+
+    <style name="tvLight" parent="tvStyle">
+        <item name="fontFamily">@font/light</item>
+    </style>
+
+    <style name="tvSemiBold" parent="tvStyle">
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="tvBold" parent="tvStyle">
+        <item name="fontFamily">@font/semi_bold</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--This line changes the color of text in Toolbar-->
+        <item name="android:textColorPrimary">@color/color_black</item>
+        <item name="background">@color/colorPrimary</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="android:textColorSecondary">@color/color_black</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="AppTheme.Toolbar">
+        <item name="android:textColorSecondary">@color/color_black</item>
+        <item name="android:textColorPrimary">@color/color_black</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:actionModeStyle">@style/ActionMode</item>
+        <item name="actionModeStyle">@style/ActionMode</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="recycler_view_empty_button" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/tinyPadding</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+
+    <style name="recycler_view_empty_text" parent="tvRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/extraMediumPadding</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorSecondary">@color/color_black</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textColorPrimary">@color/color_black</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+    </style>
+
+    <style name="tvToolbarTitle" parent="tvSemiBold">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/medium1Size</item>
+    </style>
+
+    <style name="nav_text_style" parent="tvSemiBold">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">@dimen/extraMediumSize</item>
+        <item name="android:textSize">@dimen/extraMediumPadding</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/smallSize</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/smallSize</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="btnToolbarBack">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentStart">false</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/extraMediumPadding</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/ic_back_arrow</item>
+    </style>
+
+    <style name="tool_bar_card_view_theme" parent="CardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/xxxlargePadding</item>
+        <item name="cardBackgroundColor">@color/color_card_bg</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="cardCornerRadius">@dimen/normalPadding</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="tool_bar_text_view_theme" parent="tvBold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/smallerSize</item>
+        <item name="android:paddingStart">@dimen/xxlargePadding</item>
+        <item name="android:paddingEnd">@dimen/extraMediumPadding</item>
+    </style>
+
+    <style name="DialogTitleStyle" parent="tvSemiBold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/smallestPadding</item>
+        <item name="android:paddingBottom">@dimen/smallestPadding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/extraMediumSize</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="DialogTitleText" parent="tvRegular">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/smallestPadding</item>
+        <item name="android:textSize">@dimen/normalSize</item>
+    </style>
+
+    <style name="DialogMessageStyle" parent="tvRegular">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/smallPadding</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+    </style>
+
+    <style name="permission_dialog_ButtonStyle" parent="tvRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/largePadding</item>
+        <item name="android:padding">@dimen/smallPadding</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="tvSetting" parent="tvRegularSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/normalPadding</item>
+        <item name="android:paddingBottom">@dimen/normalPadding</item>
+        <item name="android:drawablePadding">@dimen/normalPadding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent_white_60</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="textHintLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/medium1Size</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="textLabel" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/light_gray</item>
+        <item name="colorControlNormal">@color/light_gray</item>
+        <item name="colorControlActivated">@color/light_gray</item>
+        <item name="android:labelTextSize">@dimen/medium1Size</item>
+    </style>
+
+    <style name="tvInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/extraNormalPadding</item>
+        <item name="boxStrokeColor">@color/light_gray</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextAppearance">@style/textHintLabel</item>
+        <item name="android:theme">@style/textLabel</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+
+    <style name="tvInputEditText" parent="tvSemiBold">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/color_gray</item>
+        <item name="android:paddingStart">@dimen/extraMediumPadding</item>
+        <item name="android:paddingTop">@dimen/extraNormalPadding</item>
+        <item name="android:paddingEnd">@dimen/extraMediumPadding</item>
+        <item name="android:paddingBottom">@dimen/extraNormalPadding</item>
+    </style>
+
+    <style name="btnStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="fontFamily">@font/semi_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textSize">@dimen/normalSize</item>
+        <item name="cornerRadius">@dimen/largestPadding</item>
+        <item name="android:theme">@style/btnTheme</item>
+        <item name="android:padding">@dimen/medium1Size</item>
+    </style>
+
+    <style name="btnWrapStyle" parent="btnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/largestPadding</item>
+        <item name="fontFamily">@font/semi_bold</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+        <item name="cornerRadius">@dimen/largestPadding</item>
+        <item name="android:theme">@style/btnTheme</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="btnSmallStyle" parent="btnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/largestPadding</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+        <item name="cornerRadius">@dimen/largestPadding</item>
+        <item name="android:theme">@style/btnTheme</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="btnTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimaryDark">@color/color_yellow</item>
+        <item name="colorPrimary">@color/color_yellow</item>
+        <item name="colorSecondary">@color/color_yellow</item>
+    </style>
+
+    <style name="textAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="seekBarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/color_yellow</item>
+        <item name="android:colorControlNormal">@color/light_gray</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Gets rid of the search icon -->
+        <item name="searchIcon">@drawable/ic_icon</item>
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@color/color_white</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="queryHint">@string/search</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="hintTextAppearance">@style/textHintLabel</item>
+        <item name="android:textSize">@dimen/mediumSize</item>
+    </style>
+</resources>

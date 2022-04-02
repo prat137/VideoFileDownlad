@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/tinyPadding"
+        app:cardMaxElevation="@dimen/smallPadding"
+        app:contentPadding="@dimen/smallPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/miniPadding">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermissionTitle"
+                style="@style/DialogTitleText"
+                android:text="@string/permission_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/tinyPadding"
+                android:layout_marginBottom="@dimen/tinyPadding"
+                android:background="@color/colorAccent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPurposePermissionMsg"
+                style="@style/DialogMessageStyle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPermission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/smallPadding"
+                android:fontFamily="@font/medium"
+                android:paddingTop="@dimen/smallPadding"
+                android:scaleType="center"
+                android:text="@string/permission_step_text"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/mediumSize" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAllow"
+                    style="@style/permission_dialog_ButtonStyle"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/allow"
+                    android:textColor="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSkip"
+                    style="@style/permission_dialog_ButtonStyle"
+                    android:layout_toStartOf="@+id/tvAllow"
+                    android:text="@string/skip"
+                    android:textColor="@color/color_black" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
